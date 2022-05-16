@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "combineext",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/CombineCommunity/CombineExt",
+      "state" : {
+        "branch" : "main",
+        "revision" : "dcfb8a8208ed21c2267ffd93f4ab38743a9aedd7"
+      }
+    }
+  ],
+  "version" : 2
+}

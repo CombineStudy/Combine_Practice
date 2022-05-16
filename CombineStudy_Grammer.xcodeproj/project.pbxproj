@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EEDE59582832612600A7FDF0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDE59572832612600A7FDF0 /* main.swift */; };
+		EEDE59602832614C00A7FDF0 /* CombineExt in Frameworks */ = {isa = PBXBuildFile; productRef = EEDE595F2832614C00A7FDF0 /* CombineExt */; };
+		EEDE5963283261BB00A7FDF0 /* Publisher_Subscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDE5962283261BB00A7FDF0 /* Publisher_Subscriber.swift */; };
+		EEDE5965283261D000A7FDF0 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDE5964283261D000A7FDF0 /* Subject.swift */; };
+		EEDE5967283261DB00A7FDF0 /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDE5966283261DB00A7FDF0 /* Scheduler.swift */; };
+		EEDE5969283261EA00A7FDF0 /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDE5968283261EA00A7FDF0 /* Cancellable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +28,10 @@
 
 /* Begin PBXFileReference section */
 		EEDE59542832612600A7FDF0 /* CombineStudy_Grammer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CombineStudy_Grammer; sourceTree = BUILT_PRODUCTS_DIR; };
-		EEDE59572832612600A7FDF0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		EEDE5962283261BB00A7FDF0 /* Publisher_Subscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Publisher_Subscriber.swift; sourceTree = "<group>"; };
+		EEDE5964283261D000A7FDF0 /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		EEDE5966283261DB00A7FDF0 /* Scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
+		EEDE5968283261EA00A7FDF0 /* Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEDE59602832614C00A7FDF0 /* CombineExt in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,9 +65,20 @@
 		EEDE59562832612600A7FDF0 /* CombineStudy_Grammer */ = {
 			isa = PBXGroup;
 			children = (
-				EEDE59572832612600A7FDF0 /* main.swift */,
+				EEDE59612832616A00A7FDF0 /* 5.16 */,
 			);
 			path = CombineStudy_Grammer;
+			sourceTree = "<group>";
+		};
+		EEDE59612832616A00A7FDF0 /* 5.16 */ = {
+			isa = PBXGroup;
+			children = (
+				EEDE5962283261BB00A7FDF0 /* Publisher_Subscriber.swift */,
+				EEDE5964283261D000A7FDF0 /* Subject.swift */,
+				EEDE5966283261DB00A7FDF0 /* Scheduler.swift */,
+				EEDE5968283261EA00A7FDF0 /* Cancellable.swift */,
+			);
+			path = 5.16;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,6 +97,9 @@
 			dependencies = (
 			);
 			name = CombineStudy_Grammer;
+			packageProductDependencies = (
+				EEDE595F2832614C00A7FDF0 /* CombineExt */,
+			);
 			productName = CombineStudy_Grammer;
 			productReference = EEDE59542832612600A7FDF0 /* CombineStudy_Grammer */;
 			productType = "com.apple.product-type.tool";
@@ -106,6 +128,9 @@
 				Base,
 			);
 			mainGroup = EEDE594B2832612600A7FDF0;
+			packageReferences = (
+				EEDE595E2832614C00A7FDF0 /* XCRemoteSwiftPackageReference "CombineExt" */,
+			);
 			productRefGroup = EEDE59552832612600A7FDF0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -120,7 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEDE59582832612600A7FDF0 /* main.swift in Sources */,
+				EEDE5967283261DB00A7FDF0 /* Scheduler.swift in Sources */,
+				EEDE5965283261D000A7FDF0 /* Subject.swift in Sources */,
+				EEDE5969283261EA00A7FDF0 /* Cancellable.swift in Sources */,
+				EEDE5963283261BB00A7FDF0 /* Publisher_Subscriber.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +312,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EEDE595E2832614C00A7FDF0 /* XCRemoteSwiftPackageReference "CombineExt" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CombineCommunity/CombineExt";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EEDE595F2832614C00A7FDF0 /* CombineExt */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EEDE595E2832614C00A7FDF0 /* XCRemoteSwiftPackageReference "CombineExt" */;
+			productName = CombineExt;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EEDE594C2832612600A7FDF0 /* Project object */;
 }
